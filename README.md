@@ -1,4 +1,4 @@
-node-image-cropper
+* node-image-cropper
 * to install give "npm install"
 * then to run the project give "node app"
 

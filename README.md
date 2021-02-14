@@ -1,6 +1,6 @@
 node-image-cropper
-to install give "npm install"
-then to run the project give "node app"
+* to install give "npm install"
+* then to run the project give "node app"
 
 The following are the user stories for the image cropper tool.
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Node Image Cropper</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="page-title">
+      <a href="./">Node Image Cropper</a>
+    </h1>
+    <h2>Move the horizontal and vertical bars to crop the image.</h2>
+  </header>
+  <main>
+    <div id="cropped-list"></div>
+    <div class="wrapper-container">
+      <div class="wrapper">
+        <div class="canvas">
+          <canvas id='canvas1'></canvas>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="canvas">
+          <canvas id='canvas2'></canvas>
+          <button id="upload-btn" class="btn">
+            <i class="material-icons">upload</i>
+            <span>Upload Cropped Image</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+  <script type="text/javascript" src="cropClass.js"></script>
+  <script type="text/javascript" src="cropped_list.js"></script>
+</body>
+
+</html>

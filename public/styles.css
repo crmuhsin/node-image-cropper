@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: Courier, monospace;
+  font-size: 16px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #555;
+}
+
+main {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
+#cropped-list {
+  width: 300px;
+  border-right: 2px solid aliceblue;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.wrapper-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.wrapper {
+  position: relative;
+  width: 50%;
+}
+
+@media screen and (max-width: 959px) {
+  .wrapper-container {
+    flex-direction: column;
+  }
+  .wrapper {
+    width: 90%;
+  }
+}
+
+.canvas {
+  height: 70vh;
+  overflow: auto;
+  margin: 20px;
+}
+
+canvas {
+  margin: 10px;
+  padding: 0;
+  border: 1px solid #333;
+  display: inline-block;
+}
+
+.load-image {
+  display: flex;
+  text-align: left;
+  margin-left: 10px;
+}
+
+
+h1 {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em 0 0;
+}
+a {
+  text-decoration: none;
+  color:navajowhite;
+}
+
+#card-holder {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;  
+}
+
+.card {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  padding: 10px;
+}
+
+.buttons {
+  position: absolute;
+  left: 30%;
+  top: 10px;
+  display: none;
+}
+.cropper-buttons{
+  left: 70%;
+}
+
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 8px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#upload-btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: white;
+  background-color: darkcyan;
+  padding: 8px 16px;
+}
+.upload-btn {
+  padding: 8px 16px;
+  color: white;
+  background-color: darkcyan;
+}
+.card:hover > .buttons {
+  display: flex;
+}
+
+.cropped-header {
+  background-color: oldlace;
+  color: #000;
+}
+.informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+.file-name {
+  word-wrap: break-word;
+}

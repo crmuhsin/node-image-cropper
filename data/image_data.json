@@ -1,0 +1,25 @@
+{
+  "1613332623434": {
+    "id": "1613332623434",
+    "originalname": "image3.jpg",
+    "filename": "image3.jpg-1613332623434.jpg",
+    "source_url": "uploaded_files/image3.jpg-1613332623434.jpg",
+    "size": 279932,
+    "created_date": "1613332623434",
+    "cropped": [
+      "1613332660777"
+    ]
+  },
+  "1613332660777": {
+    "isCropped": "true",
+    "croppedOf": "1613332623434",
+    "croppedOfName": "image3.jpg-1613332623434.jpg",
+    "id": "1613332660777",
+    "originalname": "image3.jpg-1613332623434.jpgcropped.jpg",
+    "filename": "cropped.jpg-1613332660777.jpg",
+    "source_url": "uploaded_files/cropped.jpg-1613332660777.jpg",
+    "size": 79291,
+    "created_date": "1613332660777",
+    "cropped": []
+  }
+}

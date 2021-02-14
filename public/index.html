@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Node Image Cropper</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="page-title">
+      <a href="./">Node Image Cropper</a>
+    </h1>
+  </header>
+  <main>
+    <div class="container">
+      <form class="load-image" method="POST" action="/upload-image" enctype="multipart/form-data">
+        <div>
+          <p><label for="file" style="cursor: pointer;">Upload Image To Crop</label></p>
+          <p><input type="file" accept="image/*" name="image_r" id="file"></p>
+        </div>
+        <div>
+          <p><button type="submit" class="btn upload-btn" name="upload_image">
+            <i class="material-icons">upload</i>
+            Upload
+          </button></p>
+        </div>
+      </form>
+      <h1>Uploaded Images</h1>
+      <div id="card-holder"></div>
+    </div>
+  </main>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+  <script type="text/javascript" src="list_script.js"></script>
+</body>
+
+</html>

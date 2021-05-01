@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Node Image Cropper</title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+
+      #pane {
+        position: absolute;
+        width: 45%;
+        height: 45%;
+        top: 20%;
+        left: 20%;
+
+        margin: 0;
+        padding: 0;
+        z-index: 99;
+        border: 2px solid purple;
+        background: #fefefe;
+      }
+
+      #title {
+        font-family: monospace;
+        background: purple;
+        color: white;
+        font-size: 24px;
+        height: 30px;
+        text-align: center;
+      }
+
+      #ghostpane {
+        background: #999;
+        opacity: 0.2;
+
+        width: 45%;
+        height: 45%;
+        top: 20%;
+        left: 20%;
+
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        z-index: 98;
+
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="pane">
+      <div id="title">Resize, Drag or Snap Me!</div>
+    </div>
+    <div id="ghostpane"></div>
+
+    <!-- <script type="text/javascript" src="resizeBackup.js"></script> -->
+    <script type="text/javascript" src="resizeClass.js"></script>
+  </body>
+</html>
